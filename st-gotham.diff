@@ -1,0 +1,51 @@
+8c8
+< static char *font = "Liberation Mono:pixelsize=12:antialias=true:autohint=true";
+---
+> static char *font = "Liberation Mono:pixelsize=14:antialias=true:autohint=true";
+99,106c99,106
+< 	"black",
+< 	"red3",
+< 	"green3",
+< 	"yellow3",
+< 	"blue2",
+< 	"magenta3",
+< 	"cyan3",
+< 	"gray90",
+---
+> 	"#0a0f14",//"black", 0
+> 	"#c33027", //"red3", 1
+> 	"#26a98b", //"green3", 2
+> 	"#edb54b", //"yellow3", 3
+> 	"#185465", //"blue2", 4
+> 	"#4e5165", //"magenta3", 5
+> 	"#33859d", //"cyan3",6
+> 	"#98d1ce", // "gray90", 7
+109,116c109,116
+< 	"gray50",
+< 	"red",
+< 	"green",
+< 	"yellow",
+< 	"#5c5cff",
+< 	"magenta",
+< 	"cyan",
+< 	"white",
+---
+> 	"#10151b", // "gray50", 8
+> 	"#d26939", // "red", 9
+> 	"#5E7C9F", //"green", 10
+> 	"#245361", // "yellow", 11
+> 	"#13779B", // "#5c5cff", 12
+> 	"#888ba5", // "magenta", 13
+> 	"#599caa", // "cyan", 14
+> 	"#d3ebe9", // "white", 15
+121,122c121,123
+< 	"#cccccc",
+< 	"#555555",
+---
+> 	"#cccccc", // 256
+> 	"#555555", // 257
+> 	"#98d1ce" // 258
+130c131
+< unsigned int defaultfg = 7;
+---
+> unsigned int defaultfg = 258;

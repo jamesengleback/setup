@@ -1,0 +1,21 @@
+8c8
+< static const char *fonts[]          = { "Liberation Mono:size=10" };
+---
+> static const char *fonts[]          = { "monospace:size=10" };
+14,15c14
+< static const char col_gotham_gray[] = "#0A0F14";
+< static const char col_gotham_cyan[] = "#26A98B";
+---
+> static const char col_cyan[]        = "#005577";
+19c18
+< 	[SchemeSel]  = { col_gray4, col_gotham_gray,  col_gotham_cyan},
+---
+> 	[SchemeSel]  = { col_gray4, col_cyan,  col_cyan  },
+60c59
+< static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", col_gray1, "-nf", col_gray3, "-sb", col_gotham_cyan, "-sf", col_gray4, NULL };
+---
+> static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", col_gray1, "-nf", col_gray3, "-sb", col_cyan, "-sf", col_gray4, NULL };
+62d60
+< static const char *surfcmd[] = {"surf", NULL};
+68d65
+< 	{ MODKEY|ShiftMask,		XK_s,	   spawn,	   {.v = surfcmd }}, // mine - make surfcmd
