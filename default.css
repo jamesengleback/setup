@@ -1,11 +1,11 @@
 *,div,pre,textarea,body,input,td,tr,p{
-	background-color: #202020 !important;
+	background-color: #0A0F14 !important;
 	background-image: none !important;
-	color: #bbbbbb !important;
+	color: #39a0a5 !important;
 }
 h1, h2, h3, h4 {
-	background-color: #202020 !important;
-	color: #bbbbbb !important;
+	background-color: #0A0F14 !important;
+	color: #39a0a5 !important;
 }
 img {
 	opacity: .5;
